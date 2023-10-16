@@ -12,4 +12,14 @@ import './bootstrap';
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-import './components/ListCards';
+//import './components/ListCards';
+
+import ReactDOM from 'react-dom/client';
+import Main from './components/Main'
+import { BrowserRouter } from 'react-router-dom';
+
+ReactDOM.createRoot(document.getElementById('app')).render(
+    <BrowserRouter>
+        <Main/>
+    </BrowserRouter>
+)
