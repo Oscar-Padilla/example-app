@@ -9,9 +9,9 @@ function Card_C(props) {
         <Card style={{ width: '18rem' }}>
             {/*<Card.Img variant="top" src="holder.js/100px180" />*/}
             <Card.Body>
-                <Card.Title>{id}</Card.Title>
-                <Card.Subtitle>{firstName}</Card.Subtitle>
-                <Card.Text>{email}</Card.Text>
+                <Card.Title>ID: {id}</Card.Title>
+                <Card.Subtitle>Nombre: {firstName}</Card.Subtitle>
+                <Card.Text>Email: {email}</Card.Text>
                 {/*<Button variant="primary">Go Somewhere</Button>*/}
             </Card.Body>
         </Card>

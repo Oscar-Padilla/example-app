@@ -45,11 +45,11 @@ function ListCards() {
 
 export default ListCards;
 
-if (document.getElementById('app')) {
+/*if (document.getElementById('app')) {
   const Index = ReactDOM.createRoot(document.getElementById("app"));
   Index.render(
     <React.StrictMode>
       <ListCards/>
     </React.StrictMode>
   )
-}
+}*/
