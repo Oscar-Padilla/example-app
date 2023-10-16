@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, Outlet} from 'react-router-dom';
 
 function Menu() {
   return (
@@ -16,6 +16,12 @@ function Menu() {
           </Nav>
         </Container>
       </Navbar>
+      <section>
+        <Container>
+            <Outlet>
+            </Outlet>
+        </Container>
+      </section>
     </>
   );
 }
