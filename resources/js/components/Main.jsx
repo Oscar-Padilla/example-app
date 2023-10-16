@@ -10,7 +10,7 @@ function Main() {
             <Route path="/example-app/public/" element={<Menu/>}>
                 <Route path="card" element={<Card_C/>}/>
                 <Route path="listcards" element={<ListCards/>}/>
-                <Route path="#" element={<Navigate replace to="/" />}/>
+                <Route path="*" element={<Navigate replace to="/" />}/>
             </Route>
         </Routes>
     )
