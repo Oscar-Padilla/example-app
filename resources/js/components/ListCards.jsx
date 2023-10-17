@@ -33,7 +33,7 @@ function ListCards() {
   return (
     <Stack>
       {userData.map((user)=>(
-        <Card_C 
+        <Card_C key={user.id}
           id={user.id}
           name={user.name} 
           email={user.email}
