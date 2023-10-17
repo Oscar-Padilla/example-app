@@ -16,9 +16,11 @@ use App\Http\Controllers\ProgramController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/{path?}','welcome')
+    ->where('path','.*');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Route::get('/user', [UserController::class, 'index']);
 
